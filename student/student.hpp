@@ -23,7 +23,7 @@ class student{
             {"class_chosen", class_chosen ? class_chosen->getClassname() : ""},
             {"password", password}
         };
-        std::ofstream file("student/students.json", ios::app);
+        std::ofstream file("student/students.json", ios::app); // to save the student data in json file
         if (!file.is_open()) {
             throw std::runtime_error("Failed to open student/students.json for writing.");
         }
@@ -35,7 +35,7 @@ class student{
         fullname = "";
         class_chosen = nullptr;
         password = "";
-        std::ofstream file("student/students.json", ios::app);
+        std::ofstream file("student/students.json", ios::app); // to save the student data in json file
         if (!file.is_open()) {
             throw std::runtime_error("Failed to open student/students.json for writing.");
         }
